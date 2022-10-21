@@ -4,7 +4,7 @@ import React from 'react';
 import App from '../App';
 import renderWithRouter from '../renderWithRouter';
 
-describe('Testes do componente App', () => {
+describe('Realiza os testes do componente App', () => {
   test('Testa se o link Home encaminha para a página Home', () => {
     const { history } = renderWithRouter(<App />);
     const homeLink = screen.queryByRole('link', { name: 'Home' });
