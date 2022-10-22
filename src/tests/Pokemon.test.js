@@ -26,7 +26,7 @@ const pokemon = {
   summary: 'This intelligent Pokémon roasts hard berries with electricity',
 };
 
-describe('Testa o card de um Pokémon', () => {
+describe('Realiza os testes do card de um Pokémon', () => {
   test('Testa se o card é renderizado com as informações do Pokémon passado', () => {
     renderWithRouter(<Pokemon pokemon={ pokemon } isFavorite={ false } />);
     const pikachuName = screen.queryByText('Pikachu');
